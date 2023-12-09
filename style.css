@@ -1,0 +1,490 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: linear-gradient(to left bottom, #000, #ff0000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form {
+    max-width: 600px;
+    padding: 30px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    background-color: #00000067;
+}
+.form__modalka_email{
+    background-color: #00ff00;
+    border: 1px solid #af0000;
+    opacity: 0;
+    transition: 0.7s;
+}
+.form__modalka_tel {
+    background-color: #00ff00;
+    border: 1px solid #af0000;
+    opacity: 0;
+    transition: 0.7s;
+}
+.form__modalka_password {
+    background-color: #00ff00;
+    border: 1px solid #af0000;
+    opacity: 0;
+    transition: 0.7s;
+}
+.form__modalka_checkbox{
+    background-color: #00ff00;
+        border: 1px solid #af0000;
+        opacity: 0;
+        transition: 0.7s;
+}
+.form__modalka_name {
+    background-color: #00ff00;
+    border: 1px solid #af0000;
+    opacity: 0;
+    transition: 0.7s;
+}
+.form__modalka_email.open{
+    opacity: 1;
+    box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+.form__modalka_checkbox.open{
+    opacity: 1;
+        box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+.form__modalka_tel.open{
+    opacity: 1;
+    box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+.form__modalka_password.open{
+    opacity: 1;
+    box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+.form__modalka_name.open{
+    opacity: 1;
+    box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+
+.form__title {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.form__lable {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form__email {
+    transition: 0.7s;
+    padding: 20px;
+    color: #fff;
+    margin: 0 0 20px 0;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+}
+
+.form__pas {
+    transition: 0.7s;
+    padding: 20px;
+    color: #fff;
+    margin: 0 0 20px 0;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+}
+.form__number{
+    transition: 0.7s;
+        padding: 20px;
+        color: #fff;
+        margin: 0 0 20px 0;
+        background-color: transparent;
+        border-bottom: 2px solid #000;
+}
+.form__number:focus{
+border: 1px solid rgba(109, 158, 227, 0.47);
+    border-radius: 20px;
+    background-color: #00000036
+}
+.form__pas:focus {
+    border: 1px solid rgba(109, 158, 227, 0.47);
+    border-radius: 20px;
+    background-color: #00000036
+}
+
+
+.form__email:focus {
+    border: 1px solid rgba(109, 158, 227, 0.47);
+    border-radius: 20px;
+    background-color: #00000036
+}
+
+.form__email::placeholder {
+    color: #fff;
+}
+
+.form__btn {
+    padding: 25px 50px 25px 50px;
+    background-color: #0000005e;
+    border: 1px solid rgba(234, 158, 132, 0.733);
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.7s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form__btn:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(132, 210, 234, 0.664);
+    background-color: #00000036;
+}
+.form__phone::placeholder {
+    color: #fff;
+}
+.form__name{
+    transition: 0.7s;
+        padding: 20px;
+        color: #fff;
+        margin: 0 0 20px 0;
+        background-color: transparent;
+        border-bottom: 2px solid #000;
+    }
+.form__name:focus {
+    border: 1px solid rgba(109, 158, 227, 0.47);
+    border-radius: 20px;
+    background-color: #00000036}
+.form__name.active{
+    box-shadow: 1px 1px 10px #00ff00;
+    transition: 0.7s;
+}
+.form__name.deactive{
+    box-shadow: 1px 1px 10px #ff0000;
+    transition: 0.7s;}
+.form__pas.active {
+    box-shadow: 1px 1px 10px #00ff00;
+    transition: 0.7s;
+}
+.form__username{
+    color: #00ff00;
+    margin-left: 800px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.form__pas.deactive {
+    box-shadow: 1px 1px 10px #ff0000;
+    transition: 0.7s;
+}
+
+.form__number.active{
+    box-shadow: 1px 1px 10px #00ff00;
+        transition: 0.7s;
+}
+.form__number.deactive {
+    box-shadow: 1px 1px 10px #ff0000;
+        transition: 0.7s;
+}
+.form__email.active {
+    box-shadow: 1px 1px 10px #00ff00;
+    transition: 0.7s;
+}
+
+.form__email.deactive {
+    box-shadow: 1px 1px 10px #ff0000;
+    transition: 0.7s;
+}
+/* register */
+.form__register {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.form__checked {
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.form__register .form__lable{
+    text-align: right;
+    font-size: 13px;
+}
+/* card bank */
+.card {
+    display: flex;
+
+    justify-content: center;
+    padding-top: 250px;
+    color: #00ff00;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card__chip {
+    padding: 20px;
+
+    max-width: 50px;
+    border-radius: 20px;
+}
+
+.card__top {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #00ff00
+}
+
+.card__data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__main {
+    padding: 25px;
+    width: 500px;
+    background-image: url(./img/cardfon.avif);
+    background-position: center;
+
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card__number {
+    color: #00ff00;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.card__owner {
+    padding-bottom: 3px;
+    padding-top: 15px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: 0.7s;
+}
+
+nav a:hover {
+    color: #873333;
+}
+
+h1:hover {
+    color: #00ff00;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h1 {
+    color: #fff;
+    transition: 0.8s;
+}
+/* card__Form */
+.form {
+    background: linear-gradient(to left bottom, #6e6e6e, #333333);
+    width: 700px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form_2{
+    background: linear-gradient(to left bottom, #6e6e6e, #333333);
+    width: 700px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form__block {
+    padding: 10px 10px;
+    display: flex;
+        justify-content: space-between;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form__block-label {
+    color: #00ff00;
+    transition: 0.89s;
+}
+
+.form__block-button {
+    transition: 1.5s;
+    background-color: #6e6e6e;
+    padding: 5px;
+        border: 1px solid #868686;
+        border-radius: 8px;
+        cursor: pointer;
+}
+
+.form__block-cvv {
+    transition: 1.5s;
+    background-color: #6e6e6e;
+    padding: 5px;
+        border: 1px solid #868686;
+        border-radius: 8px;
+        cursor: pointer;
+}
+.form__block-cvv:hover, .form__block-button:hover{
+    background: linear-gradient(to left bottom, #6e6e6e, #333333);
+}
+
+.form__block-date {
+    transition: 0.7s;
+    background-color: #6e6e6e;
+    padding: 5px;
+        border: 1px solid #868686;
+        border-radius: 8px;
+}
+
+.form__block-name {
+    transition: 0.7s;
+    background-color: #6e6e6e;
+    color: #00ff00;
+    padding: 5px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form__block-surname {
+    transition: 0.7s;
+    background-color: #6e6e6e;
+    color: #00ff00;
+    padding: 5px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form .form__btn_Two{
+    border-radius: 15px;
+}
+.card__name-div{
+    display: flex;
+}
+.card__name{
+    padding-right: 5px;
+}
+/* modal */
+.modal__blok{
+    opacity: 0;
+    padding: 15px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: 0.7s;
+    display: flex;
+    justify-content: space-between;
+    background-color: #873333;
+    color: #00ff00;
+font-size: 17px;
+}
+.modal__x{
+    width: 50px;
+    background-color: #333333;
+    color: #00ff00;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 1.5s;
+    
+
+}
+
+.modal__blok:hover{
+    opacity: 0;
+}
+.form__btn_two {
+    padding: 25px 50px 25px 50px;
+    background-color: #0000005e;
+    border: 1px solid rgba(234, 158, 132, 0.733);
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.7s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form__btn_Two {
+    transform: scale(1.1);
+    border: 1px solid rgba(132, 210, 234, 0.664);
+    background-color: #00000036;
+    cursor: pointer;
+}
+.form_2{
+    position: relative;
+    left: -1500px;
+    transition: 1s;
+}
+.form_2.forms {
+    position: relative;
+    left: 150px;
+}
+
+.info__of_BANK{
+    border: 1px solid #000;
+    background-color: #00ff00;
+    color: #af0000;
+    transition: 1.5s;
+    position: relative;
+    left: -2000px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin: 15px;
+}
+.info__of_BANK.infos{
+    left: 0px;
+    position: relative;
+}
